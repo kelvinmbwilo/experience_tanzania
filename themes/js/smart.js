@@ -14,26 +14,26 @@ $(document).ready(function() {
     $("body").fadeIn(500);
 			
 /* Home page item price animation---------------------------------------------*/
-$('#featuredProduct .well').mouseenter(function() {
-  $(this).children('.price').fadeOut();
-   $(this).children('.priceTag').fadeIn();
-  $(this).children('.priceTag').animate({
-	 opacity:1
-  }, 150, function() {
-    // Animation complete.
-$(this).children('.overlay').fadeIn(150);
-  });
-});
-
-$('#featuredProduct .well').mouseleave(function() {
-	$(this).children('.price').fadeIn();
-	$(this).children('.priceTag').animate({
-	opacity:0
-  }, 400, function() {
-    // Animation complete.
-	$(this).children('.overlay').fadeOut(50)
-  });
-});
+//$('#featuredProduct .well').mouseenter(function() {
+//  $(this).children('.price').fadeOut();
+//   $(this).children('.priceTag').fadeIn();
+//  $(this).children('.priceTag').animate({
+//	 opacity:1
+//  }, 150, function() {
+//    // Animation complete.
+//$(this).children('.overlay').fadeIn(150);
+//  });
+//});
+//
+//$('#featuredProduct .well').mouseleave(function() {
+//	$(this).children('.price').fadeIn();
+//	$(this).children('.priceTag').animate({
+//	opacity:0
+//  }, 400, function() {
+//    // Animation complete.
+//	$(this).children('.overlay').fadeOut(50)
+//  });
+//});
 
 	  
 /* Home page main carousel---------------- */
@@ -66,6 +66,10 @@ $('#featuredProduct .well').mouseleave(function() {
 	})
 /* Blog carousel---------------- */
 	$('#myCarouselOne').carousel({
+	  interval: 5000
+	})
+    
+    $('#myCarouselTne').carousel({
 	  interval: 5000
 	})
 	

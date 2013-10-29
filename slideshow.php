@@ -11,10 +11,10 @@
 			<div class="carousel-inner">
 			<div class="item active">
 				<div class="row">
-					<div class="span6">
+					<div class="span7">
                                             <img src="img/home.jpg" alt="#" style="height: 500px" />
 					</div>
-					<div class="span6">
+					<div class="span5">
 						<div class="promoDetail">
 								  <h1>EXPERIENCE TANZANIA LTD <span>a complete and Satisfying Experience.</span></h1>
 									
@@ -42,14 +42,14 @@
 			</div>
 			  <div class="item">
 				  <div class="row">
-						<div class="span6">
+						<div class="span7">
                                                     <img src="img/orphans.jpg" alt="#" style="height: 500px" />
 						</div>
-						<div class="span6">
+						<div class="span5">
 							<div class="promoDetail">
 							  <h1>COMMUNITY INVOLVEMENT  <span>Community Empowerment programs </span></h1>
 							  
-							  <ul style="color: #646F7E; font-weight: lighter; font-style: italic;font-family:'Yellowtail', cursive, Georgia, serif; font-size: small" >
+							  <ul style="font-size: 0.8em;color: #646F7E; font-weight: lighter; font-style: italic;font-family:'Yellowtail', cursive, Georgia, serif;" >
                                                                  <li>Endeavor to take care of the social and economic development of children especially street children, orphans and the disabled</li>
 								<li>Take care of the people living with HIV/AIDS.</li>
 								<li>We raise awareness among community members on HIV/AIDS</li>
@@ -109,7 +109,7 @@
 			   <div class="item">
 			   <div class="row">
 			   <div class="span6">
-                               <img src="img/arushalodge.png" alt="#" style="height: 500px" />
+                               <img src="img/accomo1.jpg" alt="#" style="height: 500px" />
 				</div>
 				<div class="span6">
 					<div class="promoDetail">
@@ -222,7 +222,7 @@
                         <abbr title="Phone">P:</abbr> +255 (0) 764 771 713
                       </address>
                       <address>
-                        <strong>Full Name</strong><br>
+                        <strong>ESTER SIMBAMAMUYA</strong><br>
                         <a href="mailto:simbamamuya@yahoo.co.uk">simbamamuya@yahoo.co.uk</a>
                         <a href="mailto:info@experiencetanzania.co.uk">info@experiencetanzania.co.uk</a>
                       </address>
@@ -257,371 +257,415 @@
 
 
 <section id="featuredProduct">
-<h3 class="title"><span>New Products</span></h3>
-<div id="myCarouselOne" class="carousel slide">
+    <style>
+        #showCase img{
+            height: 200px
+        }
+    </style>
+    <h3 class="title"><span>Our Photo Album</span></h3>
+<div id="showCase" class="row">
+<div class="span2">
+<div class="carousel slide">
+	<div class="carousel-inner">
+			<div class="item active">
+			<a  href="#" ><img src="themes/images/clothes/1.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/2.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/3.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/4.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/5.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/6.jpg" alt="#"/>
+			View Details</a>
+			</div>
+	</div>
+</div>
+</div>
+<div class="span2">
+<div class="carousel slide">
+	<div class="carousel-inner">
+			<div class="item active">
+			<a  href="#" ><img src="themes/images/clothes/7.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/8.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/9.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/10.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/24.png" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/12.jpg" alt="#"/>
+			View Details</a>
+			</div>
+	</div>
+</div>
+</div>
+<div class="span2">
+<div class="carousel slide">
+	<div class="carousel-inner">
+			<div class="item active">
+			<a  href="#" ><img src="themes/images/clothes/13.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/14.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/15.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/29.png" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/3.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/18.jpg" alt="#"/>
+			View Details</a>
+			</div>
+	</div>
+</div>
+</div>
+<div class="span2">
+<div class="carousel slide">
+	<div class="carousel-inner">
+			<div class="item active">
+			<a  href="#" ><img src="themes/images/clothes/7.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/8.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/9.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/10.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/24.png" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/12.jpg" alt="#"/>
+			View Details</a>
+			</div>
+	</div>
+</div>
+</div>
+<div class="span2">
+<div class="carousel slide">
+	<div class="carousel-inner">
+			<div class="item active">
+			<a  href="#" ><img src="themes/images/clothes/20.png" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/21.png" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/22.png" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/23.png" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/24.png" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/25.png" alt="#"/>
+			View Details</a>
+			</div>
+	</div>
+</div>
+</div>
+<div class="span2">
+<div class="carousel slide">
+	<div class="carousel-inner">
+			<div class="item active">
+			<a  href="#" ><img src="themes/images/clothes/13.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/14.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/15.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/27.png" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/4.jpg" alt="#"/>
+			View Details</a>
+			</div>
+			<div class="item">
+			<a  href="#" ><img src="themes/images/clothes/18.jpg" alt="#"/>
+			View Details</a>
+			</div>
+	</div>
+</div>
+</div>
+</div>
+
+    <div class="row-fluid">
+        <div class="span6">
+<h3 class="title"><span>RECENT ACTIVITIES</span></h3>
+<div id="myCarouselTne" class="carousel slide">
 	<!-- Dot Indicators -->
 	<div class="carousel-inner">
 	<div class="item active">
 		<div class="row">
-			<div class="span3">
+			<div class="span6">
 				<div class="well well-small">
 					<span class="newTag"></span>
 					<span class="priceTag">
 						<small class="oldPrice"><small>$</small>440.00</small>
 						<span class="newPrice"><small>$</small>400.00</span>
 					</span>
-					<a class="displayStyle" href="#"><img src="themes/images/clothes/1.jpg" alt="#"/></a>
-					<h5>Clothings</h5>
+                                        <a class="displayStyle" href="#"><img src="img/weekend.jpg" alt="#" style="height: 300px"/></a>
+					<h5>Drama art playing from moshi region</h5>
 					<p>
-						<a class="btn btn-warning" href="#" > Add to <i class="icon-shopping-cart"></i></a> 
-						<a class="btn" href="details.php">view details</a>
+						<a class="btn btn-success" href="details.php">view details</a>
 					</p>
-					<p><span class="price"><small>$</small>400.00</span></p>
+					<p><a href="#"><span class="price">View All</span></a></p>
 					
 				</div>
 			</div>
-			<div class="span3">
+			<div class="span6">
 				<div class="well well-small">
 				
 					<span class="priceTag">
 						<small class="oldPrice"><small>$</small>40.00</small>
 						<span class="newPrice"><small>$</small>20.00</span>
 					</span>
-					<a class="displayStyle" href="#"><img src="themes/images/clothes/2.jpg"  alt="#"/></a>
-					<h5>Clothings</h5>
+                                    <a class="displayStyle" href="#"><img src="img/Swahili.jpg"  alt="#" style="height:300px"/></a>
+					<h5>Swahili language program for visitors</h5>
 					<p>
-						<a class="btn btn-success" href="#" > Add to <i class="icon-shopping-cart"></i></a> 
-						<a class="btn" href="details.php">view details</a>
+						<a class="btn btn-success" href="details.php">view details</a>
 					</p>
 					<p>
-					<span class="price"><small>$</small>20.00</span>
-					</p>
-				</div>
-			</div>
-			<div class="span3">
-				<div class="well well-small">
-				<span class="priceTag">
-					<small class="oldPrice"><small>$</small>1.00</small>
-					<span class="newPrice"><small>$</small>25.00</span>
-				</span>
-					<a class="displayStyle" href="#"><img src="themes/images/clothes/3.jpg" alt="#"/></a>
-					<h5>Clothings </h5>
-					<p>
-						<a class="btn btn-danger" href="#" > Add to <i class="icon-shopping-cart"></i></a> 
-						<a class="btn" href="details.php">view details</a>
-					</p>
-					<p>
-					<span class="price"><small>$</small>25.00</span>
+					<p><a href="#"><span class="price">View All</span></a></p>
 					</p>
 				</div>
 			</div>
-			<div class="span3">
-				<div class="well well-small">
-					<span class="priceTag">
-					<small class="oldPrice"><small>$</small>300.00</small>
-					<span class="newPrice"><small>$</small>250.00</span>
-					</span>
-					<span class="saleTag tagRight"></span>
-					<a class="displayStyle" href="#"><img src="themes/images/clothes/4.jpg" alt="#"/></a>
-					<h5>Clothings</h5>
-					<p>
-						<a class="btn btn-primary" href="#" > Add to <i class="icon-shopping-cart"></i></a> 
-						<a class="btn" href="details.php">view details</a>
-					</p>
-					<p>
-					<span class="price"><small>$</small>250.00</span>
-					</p>
-				</div>
-			</div>			
+			
+						
 		</div>
 		</div>
 	<div class="item">
 	<div class="row">
-		<div class="span3">
+		<div class="span6">
 			<div class="well well-small">
 				<span class="newTag"></span>
 				<span class="priceTag">
 					<small class="oldPrice"><small>$</small>440.00</small>
 					<span class="newPrice"><small>$</small>400.00</span>
 				</span>
-				<a class="displayStyle" href="#"><img src="themes/images/clothes/5.jpg" alt="#"/></a>
-				<h5>Clothings</h5>
+                                <a class="displayStyle" href="#"><img src="img/Swahili.jpg" alt="#" style="height:300px"/></a>
+				<h5>Swahili language program for visitors</h5>
 				<p>
-					<a class="btn btn-warning" href="#" > Add to <i class="icon-shopping-cart"></i></a> 
-					<a class="btn" href="details.php">view details</a>
+						<a class="btn btn-success" href="details.php">view details</a>
 				</p>
-				<p><span class="price"><small>$</small>400.00</span></p>
+                                <p><a href="#"><span class="price">View All</span></a></p>
 				
 			</div>
 		</div>
-		<div class="span3">
+		<div class="span6">
 			<div class="well well-small">
 				<span class="priceTag">
 					<small class="oldPrice"><small>$</small>40.00</small>
 					<span class="newPrice"><small>$</small>20.00</span>
 				</span>
-				<a class="displayStyle" href="#"><img src="themes/images/clothes/6.jpg"  alt="#"/></a>
-				<h5>Clothings</h5>
+				<a class="displayStyle" href="#"><img src="themes/images/clothes/6.jpg"  alt="#" style="height:300px"/></a>
+				<h5>Opening Of a new rest place at arusha</h5>
 				<p>
-					<a class="btn btn-success" href="#" > Add to <i class="icon-shopping-cart"></i></a> 
-					<a class="btn" href="details.php">view details</a>
+						<a class="btn btn-success" href="details.php">view details</a>
 				</p>
 				<p>
-				<span class="price"><small>$</small>20.00</span>
-				</p>
-			</div>
-		</div>
-		<div class="span3">
-			<div class="well well-small">
-			<span class="priceTag">
-				<small class="oldPrice"><small>$</small>1.00</small>
-				<span class="newPrice"><small>$</small>25.00</span>
-			</span>
-				<a class="displayStyle" href="#"><img src="themes/images/clothes/7.jpg" alt="#"/></a>
-				<h5>Clothings </h5>
-				<p>
-					<a class="btn btn-danger" href="#" > Add to <i class="icon-shopping-cart"></i></a> 
-					<a class="btn" href="details.php">view details</a>
-				</p>
-				<p>
-				<span class="price"><small>$</small>25.00</span>
+				<p><a href="#"><span class="price">View All</span></a></p>
 				</p>
 			</div>
 		</div>
-		<div class="span3">
-			<div class="well well-small">
-				<span class="priceTag">
-				<small class="oldPrice"><small>$</small>300.00</small>
-				<span class="newPrice"><small>$</small>250.00</span>
-				</span>
-				<span class="saleTag tagRight"></span>
-				<a class="displayStyle" href="#"><img src="themes/images/clothes/8.jpg" alt="#"/></a>
-				<h5>Clothings</h5>
-				<p>
-					<a class="btn btn-primary" href="#" > Add to <i class="icon-shopping-cart"></i></a> 
-					<a class="btn" href="details.php">view details</a>
-				</p>
-				<p>
-				<span class="price"><small>$</small>250.00</span>
-				</p>
-			</div>
-		</div>			
+				
+	</div>
+	</div>
+	</div>
+		<a class="left carousel-control" href="#myCarouselTne" data-slide="prev">‹</a>
+		<a class="right carousel-control" href="#myCarouselTne" data-slide="next">›</a>
+</div>
+	
+        </div>
+        <div class="span6">
+         <h3 class="title"><span>VOLUNTEERING OPPORTUNITIES</span></h3>
+<!--         <div class="row-fluid">
+             <div id="myCarouselOne" class="carousel slide">
+	 Dot Indicators 
+	<div class="carousel-inner">
+	<div class="item active">
+		<div class="row">
+			<ul class="thumbnails">  
+        <li class="span12">  
+          <div class="thumbnail">  
+              <img src="img/infant.png" alt="product 1" style="height: 300px">  
+            <div class="caption" style="font-size: 0.8em">  
+              <h5>Assist With The Care Of Infants And Children</h5>  
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore       magna aliqua.</p>  
+              <a href="#" class="btn btn-success">Buy</a> <a href="#" class="btn btn-warning">Try</a>  
+            </div>  
+          </div>  
+        </li>  
+         
+      </ul>
+					
+		</div>
+		</div>
+	<div class="item">
+	<div class="row">
+		<ul class="thumbnails">  
+         
+        <li class="span12">  
+          <div class="thumbnail">  
+              <img src="img/children.png" alt="product 2" style="height: 300px">  
+            <div class="caption" style="font-size: 0.8em">  
+              <h5>Emprove Education For Children</h5>  
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+             <a href="#" class="btn btn-success">Buy</a> <a href="#" class="btn btn-warning">Try</a>  
+            </div>  
+          </div>  
+        </li>  
+      </ul>
+		
+				
+	</div>
+	</div>
+        <div class="item">
+	<div class="row">
+		<ul class="thumbnails">  
+         
+        <li class="span12">  
+          <div class="thumbnail">  
+              <img src="img/hiv.png" alt="product 2" style="height: 300px">  
+            <div class="caption" style="font-size: 0.8em">  
+              <h5>Support Those Affected With HIV/AIDS</h5>  
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+             <a href="#" class="btn btn-success">Buy</a> <a href="#" class="btn btn-warning">Try</a> 
+            </div>  
+          </div>  
+        </li>  
+      </ul>
+		
+				
+	</div>
+	</div>
+         <div class="item">
+	<div class="row">
+		<div class="span12">
+			<ul class="thumbnails">  
+        <li class="span12">  
+          <div class="thumbnail">  
+              <img src="img/elders.png" alt="product 1" style="height: 300px">  
+            <div class="caption" style="font-size: 0.8em">  
+              <h5>Improve Health And Sense Of Dignity Between Elders</h5>  
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore       magna aliqua.</p>  
+              <a href="#" class="btn btn-success">Buy</a> <a href="#" class="btn btn-warning">Try</a>  
+            </div>  
+          </div>  
+        </li>  
+        
+      </ul>
+                    
+                    
+		</div>
+		
+				
 	</div>
 	</div>
 	</div>
 		<a class="left carousel-control" href="#myCarouselOne" data-slide="prev">‹</a>
 		<a class="right carousel-control" href="#myCarouselOne" data-slide="next">›</a>
 </div>
-		
-<h3 class="title"><span>Our Photo Album</span></h3>
-<div id="showCase" class="row">
-<div class="span2">
-<div class="carousel slide">
-	<div class="carousel-inner">
-			<div class="item active">
-			<a  href="details.php" ><img src="themes/images/clothes/sma6.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma5.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma4.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma3.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma2.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma1.jpg" alt="#"/>
-			View Details</a>
-			</div>
-	</div>
-</div>
-</div>
-<div class="span2">
-<div class="carousel slide">
-	<div class="carousel-inner">
-			<div class="item active">
-			<a  href="details.php" ><img src="themes/images/clothes/sma5.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma4.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma3.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma2.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma1.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma6.jpg" alt="#"/>
-			View Details</a>
-			</div>
-	</div>
-</div>
-</div>
-<div class="span2">
-<div class="carousel slide">
-	<div class="carousel-inner">
-			<div class="item active">
-			<a  href="details.php" ><img src="themes/images/clothes/sma4.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma3.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma2.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma1.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma6.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma5.jpg" alt="#"/>
-			View Details</a>
-			</div>
-	</div>
-</div>
-</div>
-<div class="span2">
-<div class="carousel slide">
-	<div class="carousel-inner">
-			<div class="item active">
-			<a  href="details.php" ><img src="themes/images/clothes/sma3.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma2.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma1.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma6.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma5.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma4.jpg" alt="#"/>
-			View Details</a>
-			</div>
-	</div>
-</div>
-</div>
-<div class="span2">
-<div class="carousel slide">
-	<div class="carousel-inner">
-			<div class="item active">
-			<a  href="details.php" ><img src="themes/images/clothes/sma2.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma1.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma6.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma5.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma4.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma3.jpg" alt="#"/>
-			View Details</a>
-			</div>
-	</div>
-</div>
-</div>
-<div class="span2">
-<div class="carousel slide">
-	<div class="carousel-inner">
-			<div class="item active">
-			<a  href="details.php" ><img src="themes/images/clothes/sma1.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma6.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma5.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma4.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma3.jpg" alt="#"/>
-			View Details</a>
-			</div>
-			<div class="item">
-			<a  href="details.php" ><img src="themes/images/clothes/sma2.jpg" alt="#"/>
-			View Details</a>
-			</div>
-	</div>
-</div>
-</div>
-</div>
+        
+             
+             
+             
+         </div>-->
+        </div>
+        </div>	
 
 </section>
 
 <hr class="soften"/>
 <section id="client">
-<h3 class="title"><span>BRANDS</span></h3>
+<h3 class="title"><span>DESTINATIONS IN TANZANIA</span></h3>
 <div id="clients" class="carousel slide">
 		<div class="carousel-inner">
-		<div class="item active">
+		<div class="item">
 		<div class="span12">
-		<img src="themes/images/clients/1.png" alt="#" />
-		<img src="themes/images/clients/2.png" alt="#" />
-		<img src="themes/images/clients/3.png" alt="#" />
-		<img src="themes/images/clients/4.png" alt="#" />
-		<img src="themes/images/clients/5.png" alt="#" />
-		<img src="themes/images/clients/6.png" alt="#" />
+                    <img src="themes/images/clients/arusha.gif" alt="#" />
+                    <img src="themes/images/clients/gombe.gif" alt="#" />
+                    <img src="themes/images/clients/katavi.gif" alt="#" />
+                    <img src="themes/images/clients/kili.gif" alt="#" />
+                    <img src="themes/images/clients/kitulo.gif" alt="#" />
+                    <img src="themes/images/clients/mahale.gif" alt="#" />
 		</div>
 		</div>
 		<div class="item">
 		<div class="span12">
-		<img src="themes/images/clients/1.png" alt="#" />
-		<img src="themes/images/clients/8.png" alt="#" />
-		<img src="themes/images/clients/9.png" alt="#" />
-		<img src="themes/images/clients/10.png" alt="#" />
-		<img src="themes/images/clients/11.png" alt="#" />
-		<img src="themes/images/clients/12.png" alt="#" />
+                    <img src="themes/images/clients/manyara.gif" alt="#" />
+                    <img src="themes/images/clients/mikumi.gif" alt="#" />
+                    <img src="themes/images/clients/mkomazi.gif" alt="#" />
+                    <img src="themes/images/clients/ruaha.gif" alt="#" />
+                    <img src="themes/images/clients/rubondo.gif" alt="#" />
+                    <img src="themes/images/clients/saadani.gif" alt="#" />
+		</div>
+		</div>
+                <div class="item active">
+		<div class="span12">
+                    <img src="themes/images/clients/serengeti.gif" alt="#" />
+                    <img src="themes/images/clients/mikumi.gif.gif" alt="#" />
+                    <img src="themes/images/clients/tarangire.gif" alt="#" />
+                    <img src="themes/images/clients/udzungwa.gif" alt="#" />
+                    <img src="themes/images/clients/rubondo.gif" alt="#" />
+                    <img src="themes/images/clients/saadani.gif" alt="#" />
 		</div>
 		</div>
 </div>
