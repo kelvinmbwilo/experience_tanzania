@@ -5,9 +5,9 @@
 $(document).ready(function(){
         $(".navbar .nav-collapse li").hover(function(){
             $("#navs .nav-collapse li").removeClass("active");
-            $(this).css("background-color","#598DCA").css("height","60px");
+            $(this).css("background-color","#598DCA")
         },function(){
-            $(this).css("background-color","inherit").css("height","inherit");
+            $(this).css("background-color","inherit");
         });
     
     $("#navs .nav-collapse li.dropdown").hover(function(){
@@ -16,7 +16,10 @@ $(document).ready(function(){
         },function(){
             $(this).removeClass("open")
         });
+    
+    
     $("#showCase .carousel-inner .item img").addClass("img-rounded");
+    
     $("#showCase .carousel-inner .item").click(function(){
          
         var modal = "";
@@ -27,6 +30,8 @@ $(document).ready(function(){
                 modal += "</div>";
                 modal += "<div class='modal-body'>";
                 modal += "<div class='text-center' ><img src='"+$(this).find('img').attr("src") +"' height='300' width='300' /></div>";
+                modal += "</div>";
+                
                 modal += "</div>";
                 $("body").append(modal);
                 $('#addUser').modal("show");

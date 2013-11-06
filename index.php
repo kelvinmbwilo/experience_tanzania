@@ -4,11 +4,14 @@
     <meta charset="utf-8">
     <title>Experience Tanzania</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Expirience Tanania Limited Company Website">
     <meta name="author" content="kelvin mbwilo">
 <!-- styles -->
 	<link rel="stylesheet/less" type="text/css" href="themes/less/bootstrap.less">
+        <link rel="stylesheet" type="text/css" href="jqueryui/css/start/jquery-ui-1.10.3.custom.min.css">
 	<script src="themes/js/less/less.js" type="text/javascript"></script>
+        
+        
 
 	<!-- favicon-icons -->
     <link rel="shortcut icon" href="themes/images/favicon.ico">
@@ -56,9 +59,13 @@
 <!--  javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="themes/js/jquery-1.8.3.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="themes/js/smart.js"></script>
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="jqueryui/js/jquery-ui-1.10.3.custom.js"></script>
+        <script type="text/javascript" src="jqueryui/js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="themes/js/smart.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/application.js" type="text/javascript"></script>
+    
   </body>
 </html>

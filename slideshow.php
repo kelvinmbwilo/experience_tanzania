@@ -12,7 +12,7 @@
 			<div class="item active">
 				<div class="row">
 					<div class="span7">
-                                            <img src="img/home.jpg" alt="#" style="height: 500px" />
+                                            <img src="img/home1.JPG" alt="#" style="height: 500px" />
 					</div>
 					<div class="span5">
 						<div class="promoDetail">
@@ -30,7 +30,7 @@
 								<p>Rate Us: <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i></p>
 								<br>
 								<div class="cntr">
-								<a class="btn btn-primary" href="details.php" >JOIN US</a> 
+								<a class="btn btn-primary" href="#" id="join_us" >JOIN US</a> 
 								<br>
 								<br>
 								<div class="fb-like" data-href="http://www.bootstrappage.com/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="true"></div>
@@ -61,7 +61,7 @@
 							   <p>Rate Us: <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i></p>
 								<br>
 								<div class="cntr">
-								<a class="btn btn-success" href="details.php" >VOLUNTEER NOW</a> 
+								<a class="btn btn-success" href="#" id="volunteer">VOLUNTEER NOW</a> 
 								<br>
 							  <br/>
 								<div class="fb-like" data-href="http://www.bootstrappage.com/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="true"></div>
@@ -136,7 +136,7 @@
 						   <p>Rate Us: <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i></p>
                                                     <br>
                                                     <div class="cntr">
-                                                    <a class="btn btn-warning" href="details.php" >RESERVE SPACE</a> 
+                                                    <a class="btn btn-warning" href="#" id="reserveroom">RESERVE SPACE</a> 
                                                     <br>
                                                     <br>
 						 <div class="fb-like" data-href="http://www.bootstrappage.com/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="true"></div>
@@ -150,7 +150,7 @@
                             <div class="item">
 			   <div class="row">
 			   <div class="span6">
-                               <img src="img/Swahili.jpg" alt="#" style="height: 500px" />
+                               <img src="img/swahili.jpg" alt="#" style="height: 500px" />
 				</div>
 				<div class="span6">
 					<div class="promoDetail">
@@ -173,7 +173,7 @@
 						   <!--<p>Rate Us: <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i></p>-->
                                                     
                                                     <div class="cntr">
-                                                    <a class="btn btn-primary" href="details.php" >REGISTER NOW</a> 
+                                                    <a class="btn btn-primary" href="#" id="registercourse" >REGISTER NOW</a> 
                                                     
                                                     <br>
 						 <div class="fb-like" data-href="http://www.bootstrappage.com/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="true"></div>
