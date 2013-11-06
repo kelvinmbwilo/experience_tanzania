@@ -371,7 +371,7 @@ $(document).ready(function(){
         });
     });
 
-});
+
 
 /////////////////////////////////////////////////////////
 ////////////accomodations //////////////////////////////
@@ -393,8 +393,178 @@ $("#addaccomo").click(function(){
                 });
             });
         });
-});
+    });
+    $("#manageRoomSpace").click(function(){
+        $("#adminContents").html("<i class='icon-spinner icon-spin icon-4x'></i>");
+       $("#adminContents").load("admin_process.php?page=manageRoomSpace",function(){
+           $("#myTable").dataTable();
+           $(".delete").click(function(){
+                $(".delete").show("slow").parent().parent().find("span").remove();
+                var btn = $(this).parent().parent();
+                var id = $(this).parent().parent().attr("id");
+                $(this).hide("slow").parent().append("<span><br>Are You Sure <br /> <a href='#' id='yes'><i class='icon-ok'></i> Yes</a> <a href='#' id='no'> <i class='icon-remove'></i> No</a></span>");
+                $("#no").click(function(){
+                    $(this).parent().parent().find(".delete").show("slow");
+                    $(this).parent().parent().find("span").remove();
+                });
+                $("#yes").click(function(){
+                    $(this).parent().html("<br><i class='icon-spinner icon-spin'></i>deleting...");
+                    $.post("admin_process.php?page=deleteroomspace",{id:id},function(data){
+                      btn.hide("slow").next("hr").hide("slow");
+                   });
+                });
+            });
+       
+           $(".view").click(function(){
+              var id1 = $(this).attr("id");
+               var modal = "";
+                modal +="<div id='addUser' class='modal hide fade' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='false'>";
+                modal += "<div class='modal-header'>";
+                modal += "<button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>";
+                modal += "<h3>Accommodation Space Information</h3>";
+                modal += "</div>";
+                modal += "<div class='modal-body'>";
+                modal += "</div>";
+                $("body").append(modal);
+                $('#addUser').modal("show");
+                $(".modal-body").html("<img src='../img/loading.gif'> Please Wait...");
+                $(".modal-body").load("admin_process.php?page=viewroomspace",{id:id1},function(){
+                   
+                });
+                
+                $("#close").click(function(){
+                    $('#addUser').modal("hide");
+                })
+                $('#addUser').on('hidden', function () {
+                    $('#addUser').remove();
+                });
+          });
+        
+           $(".edit").click(function(){
+               var id1 = $(this).attr("id");
+               $("#adminContents").html("<img src='../img/loading.gif'>Please Wait");
+               $("#adminContents").load("admin_process.php?page=editroomspace",{id:id1},function(){
+                   
+                     CKEDITOR.replace( 'description' );
+                     $('#FileUploader').on('submit', function(e) {
+                          e.preventDefault();
+                          var editor_data = CKEDITOR.instances.description.getData();
+                          $("#hidd").attr("value",editor_data);
+                          $('#uploadButton').attr('disabled', ''); // disable upload button
+                          //show uploading message
+                          $("#output").html("<img src='../img/loading.gif'><span>Uploading...</span></div>");
+                          $(this).ajaxSubmit({
+                          target: '#output',
+                          success:  function(){
+                             $("#manageRoomSpace").trigger("click"); 
+                          }//call function after success
+                          });
+                      });
+               })
+            });
+        });
+    });
 
+    $("#manageroomguest").click(function(){
+       $("#adminContents").html("<i class='icon-spinner icon-spin icon-4x'></i>");
+       $("#adminContents").load("admin_process.php?page=manageroomguest",function(){
+           $("#myTable").dataTable();
+          //delete event
+          $(".delete").click(function(){
+            $(".delete").show("slow").parent().parent().find("span").remove();
+            var btn = $(this).parent().parent();
+            var id = $(this).parent().parent().attr("id");
+            $(this).hide("slow").parent().append("<span><br>Are You Sure <br /> <a href='#' id='yes'><i class='icon-ok'></i> Yes</a> <a href='#' id='no'> <i class='icon-remove'></i> No</a></span>");
+            $("#no").click(function(){
+                $(this).parent().parent().find(".delete").show("slow");
+                $(this).parent().parent().find("span").remove();
+            });
+            $("#yes").click(function(){
+                $(this).parent().html("<br><i class='icon-spinner icon-spin'></i>deleting...");
+                $.post("admin_process.php?page=deleteroomguest",{id:id},function(data){
+                  btn.hide("slow").next("hr").hide("slow");
+               });
+            });
+
+        });
+    
+          $(".view").click(function(){
+              var id1 = $(this).attr("id");
+               var modal = "";
+                modal +="<div id='addUser' class='modal hide fade' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='false'>";
+                modal += "<div class='modal-header'>";
+                modal += "<button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>";
+                modal += "<h3>Volunteer Information</h3>";
+                modal += "</div>";
+                modal += "<div class='modal-body'>";
+                modal += "</div>";
+                $("body").append(modal);
+                $('#addUser').modal("show");
+                $(".modal-body").html("<img src='../img/loading.gif'> Please Wait...");
+                $(".modal-body").load("admin_process.php?page=viewroomguest",{id:id1},function(){
+                   
+                });
+                
+                $("#close").click(function(){
+                    $('#addUser').modal("hide");
+                })
+                $('#addUser').on('hidden', function () {
+                    $('#addUser').remove();
+                });
+          });
+    
+    
+          $(".confirm").click(function(){
+            $(".confirm").show("slow").parent().parent().find("span").remove();
+            var btn = $(this);
+            var id = $(this).parent().parent().attr("id");
+            $(this).hide("slow").parent().append("<span><br>Are You Sure <br /> <a href='#' id='yes'><i class='icon-ok'></i> Yes</a> <a href='#' id='no'> <i class='icon-remove'></i> No</a></span>");
+            $("#no").click(function(){
+                $(this).parent().parent().find(".confirm").show("slow");
+                $(this).parent().parent().find("span").remove();
+            });
+            $("#yes").click(function(){
+                $(this).parent().html("<span><br><i class='icon-spinner icon-spin'></i>confirming...</span>");
+                var btn1 = $(this).parent().parent().find(".confirm");
+                $.post("admin_process.php?page=confirmroomguest",{id:id},function(data){
+                        alert(data);
+                  btn.html("<i class='icon-thumbs-up icon-white'></i>Confirmed").show("slow").removeClass("confirm").removeClass("btn-warning").addClass("btn-success");
+                  btn.parent().parent().find("span").remove();
+               });
+            });
+ 
+          });
+            
+            $(".edit").click(function(){
+        var id = $(this).parent().parent().attr("id");
+        $("#adminContents").html("<i class='icon-spinner icon-spin icon-4x'></i>");
+        $("#adminContents").load("admin_process.php?page=editeventform",{id:id},function(){
+           $( "#datepicker" ).datepicker({
+                changeMonth: true,
+                changeYear: true,
+                dateFormat:"yy-mm-dd"
+            });
+           
+           CKEDITOR.replace( 'description' ); 
+           $('#FileUploader').on('submit', function(e) {
+                e.preventDefault();
+                var editor_data = CKEDITOR.instances.description.getData();
+                $("#hidd").attr("value",editor_data);
+                $('#uploadButton').attr('disabled', ''); // disable upload button
+                //show uploading message
+                $("#output").html("<i class='icon-spinner icon-spin icon-2x'></i><span>Uploading...</span></div>");
+                $(this).ajaxSubmit({
+                beforeSerialize: function(){ ; },
+                target: '#output',
+                success:  afterEdit //call function after success
+                });
+            });
+        });
+    });
+
+       });
+    });
+});
 function afterSuccess()
 {     
     if($("#output").html() !== "success"){

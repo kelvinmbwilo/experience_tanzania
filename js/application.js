@@ -227,8 +227,14 @@ $(document).ready(function(){
                         }
                       });
                     $(".selec").on('click', function(e) {
+                        var from = $( "#from" ).val();
+                        var to = $( "#to" ).val();
+                        if(from === "" || to === ""){
+                            var msg = "<small class='text-danger errmsg'><br>select date range first!</small>";
+                            $("#to").after(msg);
+                        }else{
+                        $(".errmsg").remove();
                         var id = $(this).attr('id');
-                        alert(id)
                         $(".modal-body").html("<img src='img/loading.gif'> Please Wait...");
                         $(".modal-body").load("includes/applications.php?page=roomreserve",function(){
                             $(".modal-body form").on('submit', function(e) {
@@ -238,19 +244,22 @@ $(document).ready(function(){
                                 $(".modal-body").html("<img src='img/loading.gif'> Please Wait...");
                                 $.post("includes/applications.php?page=processcaccomo",
                                 {
+                                    start_date:from,
+                                    end_date:to,
                                     room_id:id,
                                     first_name:fname,
                                     last_name:lname,
                                     email:email,
                                     gender:gender,
                                     nationality:country,
+                                    status:"aply",
                                     phone: phone
                                 },
                                 function(data){
                                     if(data === "success"){
                                         $(".modal-body").html("<b>Thank You, your registration has been received, We will keep you posted on our activies through email</b>"); 
                                        }else{
-                                        $(".modal-body").html("<b>Your Email Has already been Registred, We will keep you posted on our activies through email</b>"); 
+                                        $(".modal-body").html(data); 
                                        }
                                      setTimeout(function()  {
                                          $('#addUser').modal("hide");
@@ -261,7 +270,7 @@ $(document).ready(function(){
                             });
                             
                         });
-                       
+                        } 
                     });
                     
                 });

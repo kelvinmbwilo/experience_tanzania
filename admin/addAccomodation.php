@@ -35,7 +35,7 @@ if($_POST)
 	if(!isset($_FILES['mFile']))
 	{
             $FileTitle= mysql_real_escape_string($_POST['mName']); // file title
-            $query = mysql_query("INSERT INTO rooms VALUES ('', '$FileTitle','{$_POST['price']}','{$_POST['rooms']}','{$_POST['descr']}','','avv')")or die(mysql_error());
+            $query = mysql_query("INSERT INTO rooms VALUES ('', '$FileTitle','{$_POST['price']}','{$_POST['rooms']}','{$_POST['descr']}','','available')")or die(mysql_error());
             die("success");
 	}else{
 
@@ -94,7 +94,7 @@ if($_POST)
         $layer->save($dirPath, $filename, $createFolders, $backgroundColor, $imageQuality);
         chmod($dirPath ."/".$filename , 0777);
         //connect & insert file record in database
-       $query = mysql_query("INSERT INTO rooms VALUES ('', '$FileTitle','{$_POST['price']}','{$_POST['rooms']}','{$_POST['descr']}','{$filename}','avv')")or die(mysql_error());
+       $query = mysql_query("INSERT INTO rooms VALUES ('', '$FileTitle','{$_POST['price']}','{$_POST['rooms']}','{$_POST['descr']}','{$filename}','available')")or die(mysql_error());
        die("success");
    }else{
    		die('error uploading File!');

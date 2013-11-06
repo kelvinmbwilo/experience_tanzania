@@ -11,7 +11,6 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Experience Tanzania Limited - Administration Page</title>
-        
         <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-responsive.min.css">
         <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../jqueryui/css/start/jquery-ui-1.10.3.custom.min.css">
@@ -31,10 +30,10 @@
                 <div class="span1"></div>
                 <div class="span10">
                     <div class="row-fluid" >
-                    <div class="span4  text-left" id="leftnav">
+                    <div class="span3  text-left" id="leftnav">
                         <?php include 'adminMenu.php'; ?>
                     </div>
-                   <div class="span8" id="adminContents">
+                   <div class="span9" id="adminContents">
                        
                    </div>
                 </div>

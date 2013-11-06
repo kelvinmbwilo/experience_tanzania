@@ -52,7 +52,7 @@ class form {
                 $inQuery .= ($counter == $arrLength)?" {$key}='{$value}' ":" {$key}='{$value}' " . ",";
             }
             $inQuery .=" WHERE {$id}='{$idvalue}'";
-            echo $inQuery;
+            //echo $inQuery;
             
             $squery = mysql_query($inQuery) or die(mysql_error());
         }

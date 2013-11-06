@@ -344,7 +344,7 @@ if (isset($_GET['page'])){
     }
 
     if($_GET['page'] == "roomreserve1"){
-        $query = mysql_query("SELECT * FROM rooms WHERE status = 'avv'");
+        $query = mysql_query("SELECT * FROM rooms WHERE status = 'available'");
         $arr = array();
         $srt = "<select id='rooms' required class=''>";
         $srt .="<option value='' disabled >Select Accomodation Space</option>";
@@ -381,6 +381,103 @@ to
     if($_GET['page'] == "processcaccomo"){
         form::addUser($_POST, "room_guest");
         echo "success";
+    }
+
+    ///////////////////////////////////////////////////////////////////////
+    /////////////////Safari And Tours ////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////
+    if($_GET['page'] == "safarireserve"){
+        ?>
+<small></small><br />
+<small><span class="text-error">*</span> - Required Field </small>
+   <div class="control-group">
+  </div>
+  <form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="inputEmail">First Name <span class="text-error"> *</span></label>
+    <div class="controls">
+        <input type="text" id="firstname" placeholder="First Name" required>
+    </div>
+  </div>
+     
+   
+  <div class="control-group">
+    <label class="control-label" for="inputEmail">Last Name <span class="text-error"> *</span></label>
+    <div class="controls">
+      <input type="text" id="lastname" placeholder="Last Name" required>
+    </div>
+  </div>
+    
+  <div class="control-group">
+    <label class="control-label" for="inputEmail">Gender <span class="text-error"> *</span></label>
+    <div class="controls">
+      <?php echo form::genderDropdown(""); ?>
+    </div>
+  </div>
+  
+   <div class="control-group">
+    <label class="control-label" for="inputEmail">Email <span class="text-error"> *</span></label>
+    <div class="controls">
+        <input type="email" id="email" placeholder="Email" required>
+    </div>
+  </div>
+    
+  <div class="control-group">
+      <label class="control-label" for="inputPassword">Phone Number <span class="text-error"> *</span></label>
+    <div class="controls">
+        <input type="text" id="phone" placeholder="Phone Number" required >
+    </div>
+  </div>
+    
+  <div class="control-group">
+    <label class="control-label" for="inputPassword">Nationality <span class="text-error"> *</span></label>
+    <div class="controls">
+      <?php form::countryList(); ?>
+    </div>
+  </div>
+   
+  <div class="control-group">
+    <div class="controls">
+        <button type="submit" class="btn btn-primary pull-right"><i class="icon-hand-right"></i>Reserve</button>
+    </div>
+  </div>
+</form>
+     <?php
+    }
+    
+    if($_GET['page'] == "roomreserve1"){
+        $query = mysql_query("SELECT * FROM rooms WHERE status = 'available'");
+        $arr = array();
+        $srt = "<select id='rooms' required class=''>";
+        $srt .="<option value='' disabled >Select Accomodation Space</option>";
+            ?>
+<h4>Select Your Favorite Place</h4>
+<small>*Select date range first then click the forward arrow to select</small>
+<!--date range-->
+From
+<input type="text" id="from" name="from" />
+to
+<input type="text" id="to" name="to" />
+<div style="position: relative; height: 300px;width: 450px; overflow-y:scroll">
+            <ul class="thumbnails">
+<?php
+        while ($row1 = mysql_fetch_array($query)) {
+            ?>
+                <li class="span2">
+                    <div class="thumbnail">
+                        <img src="uploads/rooms/<?php echo $row1['image'] ?>" alt="" class="img-rounded" style="height:100px">
+                        <p><?php echo $row1['name']?> <button class="btn btn-info btn-mini selec" id="<?php echo $row1['id'] ?>"><i class="icon-arrow-right pull-left"></i></button></p>
+                        <p class="text-center"><?php echo $row1['price']?></p>
+                    </div>
+                </li>
+            <?php
+            
+        }
+        
+        ?>
+                </ul>
+           </div> 
+        <?php
     }
 }
 

@@ -97,7 +97,7 @@
                                                     
                                                       <br/>
                                                   <div class="cntr">
-                                                          <a class="btn btn-success" href="details.php" >BOOK NOW</a> 
+                                                          <a class="btn btn-success" href="#"  >BOOK NOW</a> 
                                                     
                                                     <br/>
                                                           <div class="fb-like" data-href="http://www.bootstrappage.com/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="true"></div>
